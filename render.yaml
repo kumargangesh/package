@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: placement
+    env: python
+    buildCommand: ""
+    startCommand: gunicorn model:app
+    plan: free
